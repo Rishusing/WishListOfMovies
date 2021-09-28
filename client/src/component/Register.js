@@ -16,6 +16,7 @@ function Register() {
         const res = await fetch("/register", {
             method: "POST",
             headers: {
+                "Accept":"application/json",
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
@@ -30,7 +31,6 @@ function Register() {
             setErr("");
             history.push("/login")
         }
-
     }
     return (
         <div className = 'body'>

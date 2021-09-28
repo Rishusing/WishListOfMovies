@@ -8,7 +8,7 @@ require('../db/conn')
 
 
 router.post('/register', async (req, res) => {
-    
+    console.log(req.body)
     const { name, email, password, cpassword } = req.body
 
     if (!name || !email || !password || !cpassword) {

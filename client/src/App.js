@@ -13,10 +13,6 @@ import {useEffect} from 'react'
 
 function App() {
 
-  useEffect(() => {
-    document.title = "movieMarket"
-  }, [])
-
   return (
     <>
         <Navbar />
